@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+    <title>Password changing</title>
 </head>
 <body>
-    <h2>User Profile</h2>
-    <form method="post" enctype="multipart/form-data">
+    <h2>Enter new password</h2>
+    <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Save</button>
+        <button type="submit">Change password</button>
     </form>
-    <a href={{pswd_field}}>change my password</a>
 </body>
 </html>

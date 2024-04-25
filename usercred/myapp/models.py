@@ -27,3 +27,7 @@ class Profile(mymodel):
     dob = models.DateField()
     created_datetime = models.DateTimeField(auto_now_add=True)
     updated_datetime = models.DateTimeField(auto_now=True)
+
+
+class PasswordChange(mymodel):
+    newpassword = models.CharField(max_length=50)
