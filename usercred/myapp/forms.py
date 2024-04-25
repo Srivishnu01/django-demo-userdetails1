@@ -3,11 +3,10 @@ from .models import CustomUser, Profile
 
 
 class UserRegistrationForm(forms.ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput)
 
     class Meta:
         model = CustomUser
-        fields = ['email', 'phone_number', 'password']
+        fields = ['email', 'phone_number', 'mypassword']
 
 
 class ProfileUpdateForm(forms.ModelForm):

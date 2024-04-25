@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'usercred.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "usercred_db3",
+        'NAME': "usercred_db8",
         'USER':"root",
         "PASSWORD":"1234"
     }
